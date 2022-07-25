@@ -69,9 +69,7 @@ public class PurchaseServiceImpl implements PurchaseService, Mapper<Purchase, Pu
 
     @Override
     public Purchase convertToEntity(PurchaseDTO purchaseDTO) {
-        modelMapper.map(purchaseDTO, Purchase.class);
         return modelMapper.map(purchaseDTO, Purchase.class);
-
     }
 
     @Override
